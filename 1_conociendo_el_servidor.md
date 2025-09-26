@@ -130,10 +130,10 @@ Comandos / ficheros:
 - `getent shadow` (acceso restringido)
 
 **Capturas**
-- Usuarios: `img/usuarios-grupos-1.png`
-- Grupos: `img/usuarios-grupos-2.png`
-- Comandos getent: `img/usuarios-grupos-3.png`
-- Ejemplo de /etc/shadow (si procede): `img/usuarios-grupos-4.png`
+- Usuarios: `img/usuarios-grupos-.1.png`
+- Grupos: `img/usuarios-grupos-.2.png`
+- Comandos getent: `img/usuarios-grupos-.3.png`
+- Ejemplo de /etc/shadow (si procede): `img/usuarios-grupos-.4.png`
 
 **Comentario**
 > Subrayar usuarios importantes (p.ej. `root`, cuentas de servicio) y grupos con privilegios.
