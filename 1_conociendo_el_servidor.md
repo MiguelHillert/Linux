@@ -68,7 +68,7 @@ Comandos:
 ![Memoria RAM](img/MemoriaRAM.png)
 
 **Comentario**
-> Marcar la columna `available` o la memoria total/used.
+> Se aprecia la memoria usada y disponible.
 
 ---
 
@@ -82,7 +82,7 @@ Comandos:
 ![CPU](img/CPU.png)
 
 **Comentario**
-> Destacar número de CPU lógicos y modelo.
+> Se ven los núcleos y características del procesador.
 
 ---
 
@@ -97,7 +97,7 @@ Comandos:
 ![Discos y particiones](img/DiscosYPars.png)
 
 **Comentario**
-> Subrayar las particiones principales y los puntos de montaje.
+> Se listan los discos y sus particiones.
 
 ---
 
@@ -111,7 +111,7 @@ Comandos:
 ![Sistemas montados](img/sistemas_montados.png)
 
 **Comentario**
-> Señalar uso de disco en `/`, `/home` u otros puntos importantes.
+> Indica el espacio ocupado y libre en cada partición.
 
 ---
 
@@ -126,7 +126,7 @@ Comandos:
 ![Tamaño de carpeta](img/tamaño_carpeta.png)
 
 **Comentario**
-> Indica qué carpetas consumen más espacio para justificar limpieza o backups.
+> Se ve cuánto ocupa cada directorio dentro de `/home`.
 
 ---
 
@@ -144,7 +144,7 @@ Comandos / ficheros:
 - Ejemplo de /etc/shadow (si procede): ![etc/shadow](img/usuarios-grupos.4.png)
 
 **Comentario**
-> Subrayar usuarios importantes (p.ej. `root`, cuentas de servicio) y grupos con privilegios.
+> Se observan las cuentas y grupos configurados.
 
 ---
 
@@ -158,11 +158,9 @@ Comandos:
 - `nslookup google.es` / `nslookup 8.8.8.8` (comprobar servidor DNS)
 
 **Capturas**
-- Salida `ip a`: ![ip a](img/info-red-1.png)
-- `ip r` y gateway: ![ip r](img/info-red-2.png)
-- Configuración de red (ej. `/etc/network/interfaces`): ![Conf.Red](img/config-red.png)
-- Reinicio de red: ![Reinicio.Red](img/reiniciar-red.png)
-- Captura del inspector de red del navegador (solicitud, códigos y tiempos): ![Ins.Red](img/inspector-network.png)
+- Salida `ip a`,`ip r` , gateway y pings: ![ip a](img/info-red-1.png)
+- Salida `nslookup google.es` / `nslookup 8.8.8.8`: ![ip r](img/info-red-2.png)
+
 
 **Comentario**
 > En `ip a` subrayar la tarjeta de red (ej. `enp0s3`) y la IP asignada; en `ip r` subrayar la puerta de enlace.  
@@ -170,19 +168,38 @@ Comandos:
 
 ---
 
-## Archivos de configuración importantes
+## Configuración de la red
 
-- `/etc/hostname`
-- `/etc/network/interfaces` (si usaste configuración tradicional)
-- `/etc/resolv.conf` (DNS)
+- `cat /etc/network/interfaces`
+- `cat /etc/network/resolv.conf`
+
+**Captura**
+- Configuración de red (ej. `/etc/network/interfaces`): ![Conf.Red](img/config-red.png)
 
 **Comentario**
-> Incluye capturas de esos ficheros en `img/` y subraya los `address`, `gateway` y `nameserver`.
+> 
+
 
 ---
 
-## Observaciones finales
+## Reinicio de red
 
-- Anota brevemente qué conclusiones sacas (por ejemplo: disco con poco espacio, la tarjeta `enp0s3` con IP correcta, kernel actualizado/no actualizado, etc.).
-- Indica pasos siguientes (backup, limpieza, actualización del kernel, revisión de usuarios, etc.).
+- `systemctl status networking`
+- `systemctl restart networking`
+
+**Captura**
+- Reinicio de red: ![Reinicio.Red](img/reiniciar-red.png)
+
+---
+
+## Configuración de la red: Otra forma
+
+- `cat /etc/resolv.conf`
+
+- Configuracíón de red(otra forma): ![Conf.Red.otra](img/reiniciar-red-otra.png) 
+
+**Comentario**
+> Este archivo guarda los servidores DNS. Si tienes instalado resolvconf, se actualizará automáticamente según la configuración indicada.
+
+
 
