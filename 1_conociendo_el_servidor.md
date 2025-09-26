@@ -115,7 +115,7 @@ Comandos:
 - `du -hs /home/*`
 
 **Captura**
-![Tamaño de carpeta](img/tamano_carpeta.png)
+![Tamaño de carpeta](img/tamaño_carpeta.png)
 
 **Comentario**
 > Indica qué carpetas consumen más espacio para justificar limpieza o backups.
