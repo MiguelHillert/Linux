@@ -141,7 +141,7 @@ Comandos / ficheros:
 - Usuarios: ![Usuarios](img/usuarios-grupos.1.png)
 - Grupos: ![Grupos](img/usuarios-grupos.2.png)
 - Comandos getent: ![getent](img/usuarios-grupos.3.png)
-- Ejemplo de /etc/shadow (si procede): ![etc/shadow](img/usuarios-grupos.4.png)
+- Ejemplo de cat /etc/nsswitch.conf (si procede): ![etc/nsswitch](img/usuarios-grupos.4.png)
 
 **Comentario**
 > Se observan las cuentas y grupos configurados.
