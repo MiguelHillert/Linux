@@ -2,6 +2,6 @@
 
 
 
-##Conociendo el servidor Linux.
+#Conociendo el servidor Linux.
 
-##Autor
+#Autor
