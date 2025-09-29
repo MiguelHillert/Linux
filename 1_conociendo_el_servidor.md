@@ -196,7 +196,7 @@ Comandos:
 
 - `cat /etc/resolv.conf`
 
-- Configuracíón de red(otra forma): ![Conf.Red.otra](img/reiniciar-red-otra.png) 
+- Configuracíón de red(otra forma): ![Conf.Red.otra](img/config-red-otra.png) 
 
 **Comentario**
 > Este archivo guarda los servidores DNS. Si tienes instalado resolvconf, se actualizará automáticamente según la configuración indicada.
